@@ -1,5 +1,6 @@
 @import url('normalize.css');
 
+
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
    visibility: hidden;
@@ -187,22 +188,35 @@ padding-left: 50px;
 
 }
 
+.trapezoid {
+	margin: 0 auto;
+	background: transparent url("../images/trapezoid-bg.png");
+	background-position: 0 -10px;
+	background-repeat: no-repeat;
+	
+	height: 100%;
+	width: 98%;
+	position: absolute;
+	
+	z-index: -1 ;
+}
 /*navigation under main photo*/
+
+
+
 
 
 .slidesnav {
 
 	
 position: relative;
-padding: 40px;
+/*padding: 40px;*/
+padding: 0; /*setting this to zero normalizes*/
 left: 425px;
 	list-style: none;
 	display:inline;
 
 }
-
-
-
 .circle a {
 		
       width: 16px;
@@ -212,6 +226,7 @@ left: 425px;
       background-position: -20px 0;
       float: left;
       color: transparent;
+
     }
 
 
@@ -424,23 +439,15 @@ padding-right: 0px;
 }
 
 /*Main elements*/
-h1.logo a{
-	 font-family: ‘Roboto’, sans-serif; 
-	 color: #fff;
-	font-weight: 400;
-	line-height: 1em;
-	font-size: 53px;
-	text-decoration: none;
-		text-shadow:0px 0px 0 rgb(238,238,238),1px 1px 0 rgb(231,231,231),2px 2px 0 rgb(224,224,224),3px 3px 0 rgb(217,217,217),4px 4px 0 rgb(210,210,210),5px 5px 0 rgb(203,203,203),6px 6px 0 rgb(196,196,196), 7px 7px 0 rgb(189,189,189),8px 8px 7px rgba(0,0,0,0.65),8px 8px 1px rgba(0,0,0,0.5),0px 0px 7px rgba(0,0,0,.2);      
-}
+
 
 .logo {
-width: 380px; 
+	width: 380px; 
 
 	margin-top: 40px;
-	
-
+	margin-bottom: 9px;
 }
+
 	h2, h3, h4 {
 	font-family: ‘Roboto’,  sans-serif; 
 	 color: #fff;
